@@ -1,1 +1,28 @@
 # firewall-kernel-module
+
+This readme provides the kernle module which implements 3 firewall rules as mentioned below
+
+1. Block all unsolicited ICMP packets coming in from outside except the ones going to the web-server. 
+   However,the local hosts should be able to ping outside.
+2. Block all ssh attempts from outside.
+3. Block port 80 (http) access from outside except for the web-server and test that an internal website on a local host is only accessible from inside..
+
+To build this module, please run the below mentioned command
+
+1. make 
+
+To clean up the module, please run
+
+1. make clean
+
+To install the module, please run 
+
+1. insmod firewall.ko
+
+To verify that module is inserted properly 
+
+1. lsmod | grep -i firewall
+
+To uninstall the module
+
+1. rmmod firewall
