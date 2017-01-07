@@ -9,20 +9,20 @@ This readme provides the kernle module which implements 3 firewall rules as ment
 
 To build this module, please run the below mentioned command
 
-1. make 
+- make 
 
 To clean up the module, please run
 
-1. make clean
+- make clean
 
 To install the module, please run 
 
-1. insmod firewall.ko
+- insmod firewall.ko
 
 To verify that module is inserted properly 
 
-1. lsmod | grep -i firewall
+- lsmod | grep -i firewall
 
 To uninstall the module
 
-1. rmmod firewall
+- rmmod firewall
